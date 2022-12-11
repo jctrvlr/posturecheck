@@ -1,8 +1,8 @@
-# Posture Check ---- Just the posture check
+# XarMods - Posture Check ---- Just the posture check
 
 Lightweight addon that simplifies the user interface for an optimal PvP experience.
 
-Click the minimap button or type /xar for options to configure.
+Click the minimap button or type /pc for options to configure.
 
 ## Features:
 ### Posture Check
@@ -19,7 +19,7 @@ Thank you to Stako, the creator of sArena, for making this possible!
 
 Download the addon on [CurseForge](https://www.curseforge.com/wow/addons/posturecheck)
 
-Click the minimap button or type /xar for options to configure.
+Click the minimap button or type /pc for options to configure.
 
 ## Known issues
 
@@ -27,7 +27,7 @@ TBD
 
 ## Getting help
 
-If you have an issue with the addon create an issue [here](https://github.com/jctrvlr/xarmods/issues/new) or contact Hamsti or Xaryu on Twitch
+If you have an issue with the addon create an issue [here](https://github.com/jctrvlr/posturecheck/issues/new) or contact Hamsti or Xaryu on Twitch
 
 ## Getting involved
 
