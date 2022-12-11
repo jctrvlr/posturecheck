@@ -1,0 +1,7 @@
+## Interface: 100002
+## Title: |cff00c0ffPostureCheck|r
+## Author: Stako, Hamsti
+## Version: 0.0.1
+## SavedVariables: PostureCheckDB
+
+PostureCheck.xml
