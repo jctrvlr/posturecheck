@@ -117,7 +117,7 @@ end
 function module.SendAlert()
 	local _, instanceType = IsInInstance()
 	if instanceType == "none" or instanceType == "scenario" or not module.db.disableInInstances then
-		module.AlertSystem:AddAlert(135898, "Water Check", "Remember to drink water!")
+		module.AlertSystem:AddAlert(132820, "Water Check", "Remember to drink water!")
 	else
 		module.queuedAlert = true
 	end

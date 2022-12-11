@@ -18,7 +18,7 @@ addon.optionsTable = {
 			order = 1,
 			type = "description",
 			fontSize = "large",
-			image = "Interface\\AddOns\\XarMods\\Media\\logo_transparent",
+			image = "Interface\\AddOns\\PostureCheck\\Media\\logo_transparent",
 			imageWidth = 26,
 			imageHeight = 26,
 			name = addon.addonTitle .. " " .. GetAddOnMetadata(addonName, "Version")
@@ -27,7 +27,7 @@ addon.optionsTable = {
 			order = 2,
 			type ="description",
 			fontSize = "medium",
-			name = "Posture check."
+			name = "Promoting healthier gaming."
 		},
 	},
 }
@@ -107,7 +107,7 @@ function eventHandler:ADDON_LOADED(arg1)
 
 	local LDB = LibStub("LibDataBroker-1.1"):NewDataObject(addonName, {
 		type = "launcher",
-		icon = "Interface\\AddOns\\XarMods\\Media\\logo",
+		icon = "Interface\\AddOns\\PostureCheck\\Media\\logo",
 		OnTooltipShow = function(tooltip) tooltip:AddLine(addon.addonTitle) end,
 		OnClick = function()
 			local config = LibStub("AceConfigDialog-3.0")
