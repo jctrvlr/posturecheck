@@ -131,7 +131,7 @@ function eventHandler:ADDON_LOADED(arg1)
 	end
 
 	_G["SLASH_"..addonName.."1"] = "/"..addonName
-	_G["SLASH_"..addonName.."2"] = "/xar"
+	_G["SLASH_"..addonName.."2"] = "/pc"
 	SlashCmdList[addonName] = function() LibStub("AceConfigDialog-3.0"):Open(addonName) end
 
 	_G["SLASH_"..addonName.."_RELOAD1"] = "/rl"
