@@ -14,5 +14,4 @@
 
 	<!-- Modules -->
 	<Script file="Modules\posturechecks.lua"/>
-  <Script file="Modules\waterchecks.lua"/>
 </Ui>

@@ -18,16 +18,16 @@ addon.optionsTable = {
 			order = 1,
 			type = "description",
 			fontSize = "large",
-			image = "Interface\\AddOns\\PostureCheck\\Media\\logo_transparent",
-			imageWidth = 26,
-			imageHeight = 26,
+			--image = "Interface\\AddOns\\PostureCheck\\Media\\logo_transparent",
+			--imageWidth = 26,
+			--imageHeight = 26,
 			name = addon.addonTitle .. " " .. GetAddOnMetadata(addonName, "Version")
 		},
 		description = {
 			order = 2,
 			type ="description",
 			fontSize = "medium",
-			name = "Promoting healthier gaming."
+			name = "Promoting healthier gaming habits. An addon by Xaryu"
 		},
 	},
 }
@@ -72,24 +72,24 @@ function eventHandler:ADDON_LOADED(arg1)
 	addon.optionsTable.args.profile.args.reset.width = 0.8
 	addon.optionsTable.args.profile.args.current.order = 12
 
-	addon.optionsTable.args.profile.args.xaryu = {
-		order = 11,
-		type = "execute",
-		name = "Xaryu's Profile",
-		desc = "Changes to Xaryu's preferred settings",
-		func = function()
-			for mod, _ in pairs(addon.modules) do
-				if addon.modules[mod].XaryuSettings then
-					addon.modules[mod]:XaryuSettings()
-				end
-			end
+	-- addon.optionsTable.args.profile.args.xaryu = {
+	-- 	order = 11,
+	-- 	type = "execute",
+	-- 	name = "Xaryu's Profile",
+	-- 	desc = "Changes to Xaryu's preferred settings",
+	-- 	func = function()
+	-- 		for mod, _ in pairs(addon.modules) do
+	-- 			if addon.modules[mod].XaryuSettings then
+	-- 				addon.modules[mod]:XaryuSettings()
+	-- 			end
+	-- 		end
 
-			addon.db.profile.minimap.hide = false
+	-- 		addon.db.profile.minimap.hide = false
 
-			ReloadUI()
-		end,
-		width = 0.8,
-	}
+	-- 		ReloadUI()
+	-- 	end,
+	-- 	width = 0.8,
+	-- }
 
 	LibStub("AceConfig-3.0"):RegisterOptionsTable(addonName, addon.optionsTable)
 	LibStub("AceConfigDialog-3.0"):AddToBlizOptions(addonName, addon.addonTitle)
@@ -121,7 +121,7 @@ function eventHandler:ADDON_LOADED(arg1)
 	})
 
 	addon.icon = LibStub("LibDBIcon-1.0")
-	addon.icon:Register(addonName, LDB, addon.db.profile.minimap)
+	--addon.icon:Register(addonName, LDB, addon.db.profile.minimap)
 
 	for mod, _ in pairs(addon.modules) do
 		addon.modules[mod].db = addon.db.profile[mod]

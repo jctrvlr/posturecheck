@@ -12,7 +12,7 @@ module.optionsTable = {
 		order = 1,
 		type ="description",
 		fontSize = "medium",
-		name = "Periodically notifies you to maintain good posture during your gaming session."
+		name = "Periodically notifies you to move your body during your gaming sessions."
 	},
 	break1 = {
 		order = 2,
@@ -117,7 +117,7 @@ end
 function module.SendAlert()
 	local _, instanceType = IsInInstance()
 	if instanceType == "none" or instanceType == "scenario" or not module.db.disableInInstances then
-		module.AlertSystem:AddAlert(135898, "Posture Check", "No slouching!")
+		module.AlertSystem:AddAlert(135898, "Posture Check", "And stay hydrated!")
 	else
 		module.queuedAlert = true
 	end

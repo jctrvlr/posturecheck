@@ -1,7 +1,8 @@
 ## Interface: 100002
-## Title: |cff00c0ffPostureCheck|r
-## Author: Stako, Hamsti
-## Version: 0.0.1
+## Title: PostureCheck
+## Notes: Sometimes all we need is a subtle reminder.
+## Author: Stako, Hamsti, Xaryu
+## Version: 0.0.2
 ## SavedVariables: PostureCheckDB
 
 PostureCheck.xml
